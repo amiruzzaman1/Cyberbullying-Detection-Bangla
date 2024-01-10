@@ -78,5 +78,5 @@ if st.button("Predict"):
 
 
 st.header("Sample Texts")
-st.write("ভেবেছিলাম তুই একটা ছেলে!!! এখন দেখি এটা একটা" + "<span style='color:red; font-weight:bold'>হিজরার</span>?", unsafe_allow_html=True)
+st.write("ভেবেছিলাম তুই একটা ছেলে!!! এখন দেখি এটা একটা" + "<span style='color:red; font-weight:bold'> হিজরার</span>?", unsafe_allow_html=True)
 st.write("প্রতিটি নাটক কয়েকবার করে দেখা হয়ে গেছে")
