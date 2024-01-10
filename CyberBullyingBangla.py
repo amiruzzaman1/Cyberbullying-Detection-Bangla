@@ -9,7 +9,7 @@ from keras.preprocessing.sequence import pad_sequences
 max_sequence_length = 186
 
 # Define bad_words list
-bad_words = ["মাদারচুদ", "বাইন চুদ", "জুকার", "ফালতু", "শালা", "লেংটা", "বাটপার", "মাদারচুদ", "ফালতু", "শালা", "নাস্তিকের বাচ্চা", "শুয়ার", "কুত্তা", "পুটকি", "নগ্নতায়", "সমকামি", "চুদছে", "চুদতে", "চুদা", "আবাল চোদা", "শুয়োরের বাচ্চা", "কুত্তার বাচ্চা", "হারামির বাচ্চা", "হারামজাদা", "শালার পো", "চুতমারানি", "চুদির ভাই","হাউয়ার নাতি", "খানকি", "মারা", "হোগা", "খানকির পোলা", "চোদা", "মিয়া খলিফা", "জনি সিন্স", "মাগির পোলা", "মাগি", "মাগী", "পর্ণ", "গরুচোদা"]
+bad_words = ["মাদারচুদ", "বাইন চুদ", "জুকার", "ফালতু", "শালা", "লেংটা", "বাটপার", "মাদারচুদ", "ফালতু", "শালা", "নাস্তিকের বাচ্চা", "শুয়ার", "কুত্তা", "পুটকি", "নগ্নতায়", "সমকামি", "চুদছে", "চুদতে", "চুদা", "আবাল চোদা", "শুয়োরের বাচ্চা", "কুত্তার বাচ্চা", "হারামির বাচ্চা", "হারামজাদা", "শালার পো", "চুতমারানি", "চুদির ভাই","হাউয়ার নাতি", "খানকি", "মারা", "হোগা", "খানকির পোলা", "চোদা", "মিয়া খলিফা", "জনি সিন্স", "মাগির পোলা", "মাগি", "মাগী", "পর্ণ", "গরুচোদা", "হিজরার"]
 
 # Load the model
 loaded_model = load_model('cyberbullying_model.h5')
@@ -60,9 +60,23 @@ if st.button("Predict"):
             st.write("No bad words found.")
         else:
             st.write("Prediction: Cyberbullying")
-            st.write(f"Cyberbullying Type: {predicted_label}")  # Print the filter type
+            st.write(f"Cyberbullying Type: {predicted_label}")
+
+        if filtered_bad_words: 
             st.write(f"Bad Words: {', '.join(filtered_bad_words)}")
-        st.write("Filtered Text:")
-        st.write(f"<span style='color:red; font-weight:bold'>{filtered_text}</span>", unsafe_allow_html=True)
-    else:
-        st.warning("Please enter text for prediction.")
+        else:
+            st.write("<span style='color:cyan;'>No bad words found.</span>", unsafe_allow_html=True)
+
+        if filtered_bad_words:
+            st.write("Filtered Text:")
+            st.write(f"<span style='color:red; font-weight:bold'>{filtered_bad_words}</span>", unsafe_allow_html=True)
+        else:
+            st.write("Original Text:")
+            st.write(f"{filtered_bad_words}", unsafe_allow_html=True)
+
+
+
+
+st.header("Sample Texts")
+st.write("ভেবেছিলাম তুই একটা ছেলে!!! এখন দেখি এটা একটা" + "<span style='color:red; font-weight:bold'>হিজরার</span>?", unsafe_allow_html=True)
+st.write("প্রতিটি নাটক কয়েকবার করে দেখা হয়ে গেছে")
