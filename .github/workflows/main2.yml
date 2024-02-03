@@ -11,25 +11,25 @@ jobs:
 
     steps:
     - name: Visit website 1
-      run: curl https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(English)
+      run: curl 'https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(English)'
 
     - name: Visit website 2
-      run: curl https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Bangla)
+      run: curl 'https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Bangla)'
 
     - name: Visit website 3
-      run: curl https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Hindi)
+      run: curl 'https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Hindi)'
 
     - name: Visit website 4
-      run: curl https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Arabic)
+      run: curl 'https://amiruzzaman.vercel.app/project/Cyber_Bullying_Detection_(Arabic)'
 
     - name: Visit website 5
-      run: curl https://amiruzzaman.vercel.app/project/QA_Model_(Bert_Cased)
+      run: curl 'https://amiruzzaman.vercel.app/project/QA_Model_(Bert_Cased)'
 
     - name: Visit website 6
-      run: curl https://amiruzzaman.vercel.app/project/QA_Model_(Bert_Large_Uncased)
+      run: curl 'https://amiruzzaman.vercel.app/project/QA_Model_(Bert_Large_Uncased)'
 
     - name: Visit website 7
-      run: curl https://amiruzzaman.vercel.app/project/QA_Model_(distilBert)
+      run: curl 'https://amiruzzaman.vercel.app/project/QA_Model_(distilBert)'
 
     - name: Visit website 8
-      run: curl https://amiruzzaman.vercel.app/project/QA_Model_(BB_Squad_2)
+      run: curl 'https://amiruzzaman.vercel.app/project/QA_Model_(BB_Squad_2)'
