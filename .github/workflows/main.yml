@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      run: echo "hello world"
+    - name: Visit website
+      run: curl https://cbarabic.streamlit.app/
