@@ -2,7 +2,7 @@ name: Cyberbullying Detection Cron Job
 
 on:
   schedule:
-    - cron: '* * * * *'  # This runs the job every day at midnight UTC
+    - cron: '* * * * *'
 
 jobs:
   detect-cyberbullying:
@@ -10,15 +10,4 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '14'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run cyberbullying detection
-      run: npm run detect-cyberbullying
+      run: echo "hello world"
