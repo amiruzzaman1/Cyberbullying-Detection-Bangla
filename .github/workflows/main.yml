@@ -2,7 +2,7 @@ name: Cyberbullying Detection Cron Job
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Run every 5 minutes
+    - cron: '0 */40 * * *'  # Run every 40 hours
   workflow_dispatch:
 
 jobs:
@@ -10,5 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Visit website
+    - name: Visit website 1
       run: curl https://amiruzzaman-distilbert.hf.space
+
+    - name: Visit website 2
+      run: curl https://amiruzzaman-bert-base-case-squad2.hf.space
+
+    - name: Visit website 3
+      run: curl https://amiruzzaman-bert-base-cased.hf.space
+
+    - name: Visit website 4
+      run: curl https://amiruzzaman-bert-large-uncased.hf.space
+
+    - name: Visit website 5
+      run: curl https://amiruzzaman-cbarabic.hf.space
+
+    - name: Visit website 6
+      run: curl https://amiruzzaman-cbbangla.hf.space
+
+    - name: Visit website 7
+      run: curl https://amiruzzaman-cbenglish.hf.space
+
+    - name: Visit website 8
+      run: curl https://amiruzzaman-cbhindi.hf.space
