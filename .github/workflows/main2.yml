@@ -3,10 +3,7 @@ name: My site
 on:
   schedule:
     - cron: '0 */40 * * *'  # Run every 40 hours
-  workflow_run:
-    workflows: ["Detect Cyberbullying Workflow"]
-    types:
-      - completed
+  workflow_dispatch:
 
 jobs:
   detect-cyberbullying:
