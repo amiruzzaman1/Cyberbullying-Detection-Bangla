@@ -2,7 +2,7 @@ name: Cyberbullying Detection Cron Job
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # This runs the job every day at midnight UTC
+    - cron: '* * * * *'  # This runs the job every day at midnight UTC
 
 jobs:
   detect-cyberbullying:
