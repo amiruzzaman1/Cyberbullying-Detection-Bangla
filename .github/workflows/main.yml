@@ -11,4 +11,4 @@ jobs:
 
     steps:
     - name: Visit website
-      run: curl https://cbarabic.streamlit.app/
+      run: curl https://amiruzzaman-distilbert.hf.space
