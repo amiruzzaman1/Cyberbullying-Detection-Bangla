@@ -15,3 +15,9 @@ jobs:
 
     - name: Visit website 2
       run: curl 'https://history-bot-eha8.onrender.com/'
+      
+    - name: Visit website 3
+      run: curl 'https://amiruzzaman.vercel.app/project/History_Bot'
+
+    - name: Visit website 4
+      run: curl 'https://amiruzzaman.vercel.app/project/Doc_Bot'
