@@ -1,6 +1,6 @@
 # Cyberbullying Detection in Bangla
 
-This repository focuses on the development and evaluation of machine learning and deep learning models for cyberbullying detection in Bangla language text. The following methodologies and models are employed:
+This repository is dedicated to advancing the field of cyberbullying detection in the Bangla language through the development and thorough evaluation of machine learning and deep learning models. Cyberbullying poses a significant challenge in the digital landscape, and this project aims to provide effective tools for identifying and addressing such harmful online behavior.
 
 ## Methodology
 
